@@ -8,8 +8,6 @@ if (localStorage.getItem("value")) {
   taskSave = JSON.parse(localStorage.getItem("value"));
 }
 
-localStorage.clear();
-
 form.addEventListener("submit", taskListen);
 
 list.classList.add("window-none");
