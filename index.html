@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <div class="content">
+        <h1 style="font-weight: 300; margin-bottom: 10px">ToDo app</h1>
+        <p style="padding-top: 0px; margin-top: 0">task list</p>
+      </div>
+      <div class="window" id="list">
+        <h1 style="text-align: center; margin-top: 50px">The list is empty</h1>
+      </div>
+      <div
+        style="
+          grid-column: 3/11;
+          grid-row: 3/4;
+          margin-bottom: 0;
+          background-color: rgb(218, 217, 217);
+          font-size: 12px;
+          margin-top: 10px;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+        "
+      >
+        <p style="margin: 5px">add new task</p>
+      </div>
+      <div class="add-task">
+        <form id="form">
+          <input
+            type="text"
+            class="input-style"
+            placeholder="Text of your task"
+            id="input-text"
+          />
+          <input type="submit" value="add" class="input" />
+        </form>
+      </div>
+    </div>
+    <script src="script/main.js"></script>
+  </body>
+</html>

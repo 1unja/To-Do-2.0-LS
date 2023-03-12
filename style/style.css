@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: Roboto, serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(197, 197, 197);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 4;
+}
+.content {
+  grid-column: 3/11;
+}
+
+.window {
+  display: inline;
+  background-color: white;
+  grid-column: 3/11;
+  grid-row: 2/3;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.window-none {
+  height: 140px;
+}
+
+.add-task {
+  background-color: rgb(235, 235, 235);
+  grid-column: 3/11;
+  grid-row: 4/5;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.input {
+  margin-left: 13px;
+  width: 60px;
+  font-size: 17px;
+  color: white;
+  background-color: rgb(45, 45, 255);
+  border-radius: 5px;
+  border-width: 0.5px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.input:hover {
+  background-color: rgb(30, 30, 245);
+  border-color: rgb(82, 81, 81);
+}
+
+.task-line {
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+  margin: 4px;
+  padding: 4px;
+  background-color: rgb(197, 197, 197);
+  display: flex;
+}
+
+.delete-btn {
+  background-color: red;
+  border-radius: 5px;
+  border-width: 0.5px;
+  margin-left: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgb(228, 0, 0);
+}
+
+.done-btn {
+  background-color: green;
+  border-radius: 5px;
+  border-width: 0.5px;
+  margin-left: auto;
+}
+
+.done-btn:hover {
+  background-color: rgb(0, 109, 0);
+}
+
+.done {
+  color: gray;
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.input-style {
+  width: 96%;
+  margin: 13px;
+  padding-bottom: 3px;
+}
+
+@media (max-width: 1030px) {
+  .input-style {
+    width: 94.7%;
+  }
+}
+
+@media (max-width: 800px) {
+  .input-style {
+    width: 93%;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-style {
+    width: 88%;
+  }
+}
+@media (max-width: 400px) {
+  .input-style {
+    width: 86%;
+  }
+}
+@media (max-width: 340px) {
+  .input-style {
+    width: 84%;
+  }
+}
